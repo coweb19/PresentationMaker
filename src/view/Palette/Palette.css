@@ -1,0 +1,48 @@
+.palette {
+    height: 30px;
+    padding-left: 5px;
+    display: flex;
+}
+
+.palette__element {
+    height: 24px;
+    margin: 3px 3px;
+    padding: 0 5px;
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 4px;
+    position: relative;
+}
+
+.palette__element_ico {
+    width: 24px;
+    padding: 0;
+}
+
+.element_text:hover {
+    background: rgb(226, 226, 226);
+}
+
+.palette__element:hover {
+    background-blend-mode: overlay;
+}
+
+.palette__element_ico:hover {
+    background-blend-mode: overlay;
+}
+
+.ico_colorFill {
+    background: rgb(112, 111, 111) url("./pic/colorFill.png");
+}
+
+.ico_colorBorder {
+    background: rgb(112, 111, 111) url("./pic/colorBorder.png");
+}
+
+.ico_colorText {
+    background: rgb(112, 111, 111) url("./pic/colorText.png");
+}
+
+.ico_borderWidth {
+    background: rgb(112, 111, 111) url("./pic/borderWidth.png");
+}

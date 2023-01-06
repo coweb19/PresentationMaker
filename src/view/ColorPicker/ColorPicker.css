@@ -1,0 +1,63 @@
+.colorPicker
+{
+    height: 165px;
+    width: 160px;
+    position: absolute;
+    background-color: white;
+
+    box-shadow: 0 1px 3px 1px rgba(60,64,67,.15);
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.colorPicker_hide
+{
+    visibility: hidden;
+}
+
+.color_clear
+{
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+}
+
+.color_clear::after
+{
+    content: "Прозрачный";
+}
+
+.color_clear:hover
+{
+    background: rgb(226, 226, 226);
+}
+
+.colorChooserContainer
+{
+    margin-top: 5px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    Justify-content: flex-start;
+}
+
+.colorChooser
+{
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    margin: 2px 1px 0;
+}
+
+.colorChooser:hover
+{
+    box-shadow: 0 1px 3px 1px rgba(33, 35, 36, 0.15);
+    cursor: pointer;
+}
+

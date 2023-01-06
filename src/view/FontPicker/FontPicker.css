@@ -1,0 +1,15 @@
+.fontPicker {
+    height: 24px;
+    margin: 3px 3px;
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 120px;
+    border: 1px solid #d1d1d1;
+    font-size: 15px;
+}
+
+.fontPicker:hover {
+    background: rgb(226, 226, 226);
+}

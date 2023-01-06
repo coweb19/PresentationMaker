@@ -1,0 +1,40 @@
+.sizePicker
+{
+    height: 30px;
+    box-sizing: border-box;
+    padding: 3px 2px;
+    display: flex;
+}
+
+.button
+{
+    box-sizing: border-box;
+    width: 24px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    font-size: 15px;
+    
+    cursor: pointer;
+}
+
+.button:hover
+{
+    background: rgb(226, 226, 226);
+}
+
+.button::selection
+{
+    background: transparent;
+}
+
+.value
+{
+    box-sizing: border-box;
+    width: 40px;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    outline: none;
+}

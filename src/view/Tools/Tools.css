@@ -1,0 +1,106 @@
+.tools {
+    height: 30px;
+    background-color: white;
+    border-top: 1px solid #dadce0;
+    border-bottom: 1px solid #dadce0;
+    padding-left: 9px;
+    display: flex;
+}
+
+.tool {
+    width: 24px;
+    height: 24px;
+    margin: 3px 3px;
+    cursor: pointer;
+    border-width: 0;
+    border-radius: 4px;
+    position: relative;
+}
+
+.tool__tooltip {
+    visibility: hidden;
+    display: inline-block;
+    background-color: black;
+    z-index: 1;
+    top: 30px;
+    color: white;
+    font: 12px sans-serif;
+    padding: 5px;
+}
+
+.tool:hover {
+    background-blend-mode: overlay;
+}
+
+.tool_active {
+    border: 1px solid black;
+}
+
+.tool:hover .tool__tooltip {
+    transition-delay: 0.5s;
+    position: absolute;
+    visibility: visible;
+}
+
+.tool__tooltip::selection
+{
+    background: transparent;
+}
+
+.tool_add-slide {
+    background: rgb(112, 111, 111) url("./pic/addSlide.png");
+}
+
+.tool_back-history {
+    background: rgb(112, 111, 111) url("./pic/backHist.png");
+}
+
+.tool_future-history {
+    background: rgb(112, 111, 111) url("./pic/futureHist.png");
+}
+
+.tool_cursor {
+    background: rgb(112, 111, 111) url("./pic/cursor.png");
+}
+
+.tool_text-obj {
+    background: rgb(112, 111, 111) url("./pic/textObj.png");
+}
+
+.tool_pic-obj {
+    background: rgb(112, 111, 111) url("./pic/picObj.png");
+}
+
+.tool_shape-obj {
+    background: rgb(112, 111, 111) url("./pic/shapeObj.png");
+}
+
+.splitter {
+    background-color: #dadce0;
+    width: 1px;
+    margin: 5px 0;
+}
+
+.ToolShapeObj_shape {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    list-style: none;
+    top: 20px;
+    width: 130px;
+    z-index: 1;
+    background: white;
+    border: 1px solid #dadce0;
+}
+
+.ToolShapeObj_shape_elem {
+    display: block;
+    text-indent: 20px;
+    width: 130px;
+    height: 20px;
+}
+
+.ToolShapeObj_shape_elem:hover {
+    background-color: rgb(112, 111, 111) ;
+}

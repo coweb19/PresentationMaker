@@ -1,98 +1,156 @@
-type Point = {
+export type ActionType = any
+
+export enum StateTypes {
+    CREATE_DEFAULT_PROGRAMM,
+    LOAD_PROJECT,
+    GO_FORWARD_ARCHIVE,
+    GO_BACK_ARCHIVE,
+    SAVE_TO_ARCHIVE,
+    CHANGE_PRESENTATION_TITLE,
+    ADD_SLIDE,
+    MOVE_SLIDE,
+    DELETE_SLIDE,
+    SET_SLIDE_BACKGROUND,
+    ADD_PICTURE_OBJ,
+    ADD_TEXT_OBJ,
+    SET_SELECTED_SLIDES,
+    CHANGE_TEXT_OBJ,
+    ADD_SHAPE_OBJ,
+    CHANGE_SHAPE_OBJ,
+    RESIZE_ELEMENT,
+    REMOVE_ONE_ELEM_FROM_SELECTED_ELEMS,
+    REMOVE_ONE_ELEM_FROM_SELECTED_SLIDES,
+    CHANGE_ELEM_POSITION,
+    DELETE_SELECTED_ELEMENTS,
+    SET_SELECTED_ELEMENT,
+    SET_CAN_DELETE_SLIDE,
+    INC_ELEMS_MOVE_COUNT,
+    RESET_ELEMS_MOVE_COUNT,
+    LIGHT_SLIDE,
+    SET_SAVE_TO_ARCH,
+    COPY_ELEMS,
+    PASTE_ELEMS,
+    COPY_SLIDES,
+    PASTE_SLIDES,
+    OPEN_PLAYER,
+    CLOSE_PLAYER,
+    SWITCH_SLIDE,
+}
+
+
+export type Programm = {
+    mainProg: {
+        currentPresentation: Presentation,
+        selectedSlides: Array<string>,       
+        selectedElements: Array<string>
+    },    
+
+    commonDeps: {
+        canDeleteSlides: boolean,
+        elemsMoveCount: number,
+        saveToArch: boolean,
+        slideBorderLight: borderLightType,
+        copyElemsArr: Array<string>,
+        copySlidesArr: Array<string>,
+        playerIsOpen: boolean
+    }
+}
+   
+
+export type MainProg = {
+    currentPresentation: Presentation,
+    selectedSlides: Array<string>,       
+    selectedElements: Array<string>
+}
+
+export type CommonDeps = {
+    canDeleteSlides: boolean,
+    elemsMoveCount: number,
+    saveToArch: boolean,
+    slideBorderLight: {
+        borderLightPlace: string,
+        slideId: string
+    },    
+    copyElemsArr: Array<string>,
+    copySlidesArr: Array<string>    
+}
+
+
+
+export type Presentation = {
+    title: string,
+    slides: Array<Slide>, 
+}
+
+export type ArchiveOfState = {  
+    past: Array<Programm>,   
+    future: Array<Programm>, 
+}
+
+export type SlideElements = Array<PictureObj | ShapeObj | TextObj> 
+
+export type Slide = {
+    id: string,
+    background: Picture | Color,
+    elements: SlideElements
+}
+
+export type Point = {
     x: number,
-    y: number
+    y: number,
 }
 
-type CropObj = {
-    top_left_point: Point,
-    bottom_right_point: Point
-}
-
-type Text = {
+export type ElementObj = {
     id: string,
-    type: 'text',
-    text_v: string,
-    font_size: number,
-    font_color: string,
-    font_family: string,
-    font_weight: number,
-    font_style: string,
-    top_left_position: Point,
-    bottom_right_position: Point,
-    layer_index: number,
-    rotation: number
+    position: Point,
+    height: number,
+    width: number,
 }
 
-type Image = {
-    id: string,
-    type: 'image',
-    source: string,
-    source_type: string,
-    top_left_position: Point,
-    bottom_right_position: Point,
-    crop: CropObj,
-    layer_index: number,
-    selected: boolean,
-    rotation: number
+export type Picture = {
+    imgB64: string,
+    type: 'picture',
+    fillColor: string,
+    borderColor: string,
+    borderWidth: number
 }
 
-type Circle = {
-    gr_obj_type: 'circle',
-    center_position: Point,
-    radius: number
+export type PictureObj = ElementObj & Picture;
+
+export type TextObj = ElementObj & {
+    text: string,
+    fillColor: string,
+    borderColor: string,
+    borderWidth: number,
+    textColor: string,
+	fontFamily: string,
+	fontSize: string,
+	type: 'text',
 }
 
-type Rectangle = {
-    gr_obj_type: 'rectangle',
-    top_left_position: Point,
-    bottom_right_position: Point
+export type Color = {
+    hexColor: string, 
+    type: 'color',
 }
 
-type Triangle = {
-    gr_obj_type: 'triangle',
-    first_point_position: Point,
-    second_point_position: Point,
-    third_point_position: Point
+export type ShapeObj = ElementObj & {
+    type: 'triangle' | 'rect' | 'circle' | 'outlineRect',
+    borderColor: string,
+    borderWidth: number,
+    fillColor: string,
 }
 
-type GraphObject = {
-    id: string,
-    type: 'graphic',
-    layer_index: number,
-    rotation: number,
-    border_width: number,
-    border_color: string,
-    border_radius: number,
-    background_color: string,
-    data: Circle|Rectangle|Triangle
+export type ChangedObjPosType = {
+    newX: number,
+    newY: number,
+    saveToArh: boolean
 }
 
-type Slide = {
-    id: string,
-    background: string,
-    transition_style: string,
-    scale: number,
-    selected_blocks: Array<string>,
-    slide_data: Array<Text|Image|GraphObject>
-}
+export type borderLightType = {
+    borderLightPlace: 'top' | 'bottom' | 'unset',
+    slideId: string
+} 
 
-type Presentation = {
-    common_background: string,
-    common_transition_style: string,
-    display_mode: string,
-    selected_slides: Array<string>,
-    data: Array<Slide>
-}
+export type SlideId = string
 
-type History = Array<Presentation>
-
-export {
-    type Point,
-    type CropObj,
-    type Text,
-    type Image,
-    type GraphObject,
-    type Slide,
-    type Presentation,
-    type History,
-}
+export type ChangedParams = Programm | ShapeObj | TextObj | PictureObj | SlideId | null

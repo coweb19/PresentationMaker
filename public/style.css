@@ -1,0 +1,20 @@
+@font-face {
+font-family: "Comfortaa"; 
+src: url("../fonts/Comfortaa-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
+@font-face {
+font-family: "Caveat"; 
+src: url("../fonts/Caveat-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
+@font-face {
+font-family: "Oblique"; 
+src: url("../fonts/university-oblique.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
