@@ -1,7 +1,7 @@
 import { re_changePresentationTitle } from "../CommonFunctions/mainProgOperations"
 import { ActionType, MainProg, StateTypes } from "../types"
 import { re_addPictureObj, re_addShapeObj, re_addTextObj, re_changeElemPosition, re_changeShapeObj, re_changeTextObj, re_deleteSelectedElements, re_removeOneElemFromSelectedElems, re_resizeElement, re_setSelectedElement, re_setSlideBackground } from "./slideElemReducers"
-import { re_deleteSlide, re_moveSlide, re_removeOneElemFromSelectedSlides, re_setSelectedSlides, re_switchSlide } from "./slidesReducers"
+import { re_deleteSlide, re_moveSlide, re_removeOneElemFromSelectedSlides, re_setSelectedSlides, re_switchSlide } from "./SlidesReducers"
 
 
 

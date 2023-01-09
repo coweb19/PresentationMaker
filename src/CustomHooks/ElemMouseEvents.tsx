@@ -1,7 +1,7 @@
 import React, {useEffect, useRef} from 'react'
 import { store } from '..'
-import { checkSelectedElem, getCurrElemPosition, getCurrElemSize } from '../Models/CommonFunctions/supportFunctions/supportElemOperations'
-import { getSelectedSlides, getSlides } from '../Models/CommonFunctions/supportFunctions/supportSlideOperations'
+import { checkSelectedElem, getCurrElemPosition, getCurrElemSize } from '../Models/CommonFunctions/SupportFunctions/supportElemOperations'
+import { getSelectedSlides, getSlides } from '../Models/CommonFunctions/SupportFunctions/supportSlideOperations'
 import { MainProg, Point, Programm, Slide } from '../Models/types'
 import { setSelectedElemsInHook } from './supportHooksFunctions'
 

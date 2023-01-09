@@ -6,7 +6,7 @@ import { useNormalizeElemSize, useSetElemPropsAfterSlideChanged } from '../../Cu
 import { connect } from 'react-redux'
 import { setCanDeleteSlide, setSaveToArch } from '../../Models/ActionCreators/commonActionCreators'
 import { changeElemPosition, changeTextObj, removeOneElemFromSelectedElems, resizeElement, setSelectedElement } from '../../Models/ActionCreators/elemActionCreators'
-import { checkSelectedElem } from '../../Models/CommonFunctions/supportFunctions/supportElemOperations'
+import { checkSelectedElem } from '../../Models/CommonFunctions/SupportFunctions/supportElemOperations'
 import { ShapeObject } from './ShapesSvg'
 import { ImgTextObject } from './TextPictureSvg'
 import { OutlineRect } from './OutlineSvg'

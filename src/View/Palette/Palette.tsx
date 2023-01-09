@@ -10,8 +10,8 @@ import FontPicker from '../FontPicker/FontPicker'
 import { ModalContext } from '../Modal/Modal';
 import { setSlideBackground } from '../../Models/ActionCreators/slideActionCreators'
 import { changeShapeObj, setSelectedElement } from '../../Models/ActionCreators/elemActionCreators'
-import { getAllElemsIdArr } from '../../Models/CommonFunctions/supportFunctions/supportElemOperations'
-import { searchChangedSlideIndex } from '../../Models/CommonFunctions/supportFunctions/supportSlideOperations'
+import { getAllElemsIdArr } from '../../Models/CommonFunctions/SupportFunctions/supportElemOperations'
+import { searchChangedSlideIndex } from '../../Models/CommonFunctions/SupportFunctions/supportSlideOperations'
 
 export {
   PaletteLayer,

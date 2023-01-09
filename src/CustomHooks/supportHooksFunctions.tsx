@@ -1,9 +1,8 @@
 import React, { useContext, useEffect }  from 'react'
-import { checkSelectedElem, getElemByIdToPalette } from '../Models/CommonFunctions/supportFunctions/supportElemOperations'
-import { checkSecondSlideIsBeyond } from '../Models/CommonFunctions/supportFunctions/supportSlideOperations'
+import { checkSelectedElem, getElemByIdToPalette } from '../Models/CommonFunctions/SupportFunctions/supportElemOperations'
+import { checkSecondSlideIsBeyond } from '../Models/CommonFunctions/SupportFunctions/supportSlideOperations'
 import { Slide } from '../Models/types'
 import { PaletteContext } from '../View/Palette/Palette'
-
 
 export {
   setSelectedElemsInHook,
@@ -11,7 +10,6 @@ export {
   checkSlideForReplace,
   useSetGlobalActiveTool
 }
-
 
 interface setSelectedElemsProps {
   selectedElements: Array<string>,
@@ -32,7 +30,6 @@ function setSelectedElemsInHook(props: setSelectedElemsProps) {
     props.removeOneElemFromSelectedElems(props.elemId)
   }
 }
-
 
 interface setSelectedSlidesProps {
   slides: Array<Slide>,
@@ -100,8 +97,6 @@ function setSelectedSlidesInHook(props: setSelectedSlidesProps) {
   }
 }
 
-
-
 interface chekSlideReplaceProps {
   slides: Array<Slide>,
   selectedSlides: Array<string>,
@@ -136,7 +131,6 @@ function checkSlideForReplace(props: chekSlideReplaceProps): boolean {
   
   return canMoveSlide
 }
-
 
 interface setActiveToolProps {
   selectedElements: Array<string>,

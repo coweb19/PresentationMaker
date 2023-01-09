@@ -4,7 +4,7 @@ import { PopupContext } from '../Popup/Popup'
 import { connect } from 'react-redux'
 import { changeTextObj } from '../../Models/ActionCreators/elemActionCreators'
 import { Programm, Slide } from '../../Models/types'
-import { getElemByIdToPalette } from '../../Models/CommonFunctions/supportFunctions/supportElemOperations'
+import { getElemByIdToPalette } from '../../Models/CommonFunctions/SupportFunctions/supportElemOperations'
 
 
 const defValue = "Arial"

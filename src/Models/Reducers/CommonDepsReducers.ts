@@ -1,7 +1,7 @@
 import { re_setSaveToArch } from "../CommonFunctions/archive"
-import { calcElemsIterations } from "../CommonFunctions/supportFunctions/commonOperations"
+import { calcElemsIterations } from "../CommonFunctions/SupportFunctions/CommonOperations"
 import { ActionType, borderLightType, CommonDeps, Programm, Slide, StateTypes } from "../types"
-import { re_setSlideBorderLight } from "./slidesReducers"
+import { re_setSlideBorderLight } from "./SlidesReducers"
 
 export {
   re_setCanDeleteSlide,

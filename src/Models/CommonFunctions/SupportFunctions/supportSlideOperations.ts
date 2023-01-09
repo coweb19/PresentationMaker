@@ -1,6 +1,6 @@
 import { store } from "../../..";
 import { borderLightType, Color, MainProg, Picture, PictureObj, ShapeObj, Slide, TextObj } from "../../types";
-import { createNewId } from "./commonOperations";
+import { createNewId } from "./CommonOperations";
 
 export {
   createSlideId,

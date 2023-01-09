@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import { checkSecondSlideIsBeyond, getSelectedSlides, searchChangedSlideIndexById } from '../Models/CommonFunctions/supportFunctions/supportSlideOperations'
+import { checkSecondSlideIsBeyond, getSelectedSlides, searchChangedSlideIndexById } from '../Models/CommonFunctions/SupportFunctions/supportSlideOperations'
 import { borderLightType, Slide } from '../Models/types'
 import { setSelectedSlidesInHook } from './supportHooksFunctions'
 

@@ -4,7 +4,7 @@ import {
   MainProg,
   ActionType
 } from '../types';
-import { createDefaultSlide } from './supportFunctions/supportSlideOperations';
+import { createDefaultSlide } from './SupportFunctions/supportSlideOperations';
 
 export {
   re_checkProgrammExists,

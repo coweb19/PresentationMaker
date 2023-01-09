@@ -10,7 +10,7 @@ import {
 
 import { jsPDF } from "jspdf";  //npm install jspdf --save      or      yarn add jspdf
 import { store } from '../..';
-import { getColorForJsPDF } from './supportFunctions/commonOperations';
+import { getColorForJsPDF } from './SupportFunctions/CommonOperations';
 
 
 

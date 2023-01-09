@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useRef} from 'react'
 import { connect } from 'react-redux'
 import { changeTextObj } from '../../Models/ActionCreators/elemActionCreators'
-import { getElemByIdToPalette } from '../../Models/CommonFunctions/supportFunctions/supportElemOperations'
+import { getElemByIdToPalette } from '../../Models/CommonFunctions/SupportFunctions/supportElemOperations'
 import { Programm, Slide } from '../../Models/types'
 import './SizePicker.css'
 

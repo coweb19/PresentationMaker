@@ -4,7 +4,7 @@ import MainSlide from '../Slide/Slide'
 import { PopupContext } from '../Popup/Popup'
 import { connect } from 'react-redux'
 import { Programm, Slide } from '../../Models/types'
-import { searchChangedSlideIndex } from '../../Models/CommonFunctions/supportFunctions/supportSlideOperations'
+import { searchChangedSlideIndex } from '../../Models/CommonFunctions/SupportFunctions/supportSlideOperations'
 
 interface MainPanelProps {
   slides: Array<Slide>, 

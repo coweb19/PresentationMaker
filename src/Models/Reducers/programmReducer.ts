@@ -1,11 +1,11 @@
-import { re_copySlides, re_pasteSlides, re_addSlide } from "./slidesReducers";
+import { re_copySlides, re_pasteSlides, re_addSlide } from "./SlidesReducers";
 import { re_checkProgrammExists, re_createProgram } from "../CommonFunctions/mainProgOperations";
 import { StateTypes } from "../types";
 import { ActionType, Programm } from "../types";
 import { re_goBackArchive, re_goForwardArchive } from "../CommonFunctions/archive";
 import { re_getMainProg } from "../CommonFunctions/setGetPresentation";
 import { re_mainProgState } from './mainProgReducer'
-import { re_canDeleteSlide, re_elemsMoveCount, re_playerState, re_saveToArch, re_slideBorderLight } from "./commonDepsReducers";
+import { re_canDeleteSlide, re_elemsMoveCount, re_playerState, re_saveToArch, re_slideBorderLight } from "./CommonDepsReducers";
 import { re_copyElems, re_pasteElems } from "./slideElemReducers";
 
 export function mainReducer(state: Programm = re_createProgram(), action: ActionType) {

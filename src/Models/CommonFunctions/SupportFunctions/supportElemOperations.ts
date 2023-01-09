@@ -1,5 +1,5 @@
 import { MainProg, PictureObj, Point, ShapeObj, Slide, TextObj } from "../../types"
-import { createNewId } from "./commonOperations"
+import { createNewId } from "./CommonOperations"
 import { searchChangedSlideIndex } from "./supportSlideOperations"
 
 export {

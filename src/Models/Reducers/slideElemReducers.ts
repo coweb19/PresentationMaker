@@ -1,6 +1,6 @@
-import { createNewId, deepFreeze } from '../CommonFunctions/supportFunctions/commonOperations'
-import { createPictureObj, createEmtyTextObj, createShapeObj, getChangedElem, getElemsWithChangedElem, getElemsWithNewElem, getNewElemWithNewPosition, getNewResizedElem, getNewShapeElem, getNewTextElem, searchChangedElemIndexById } from '../CommonFunctions/supportFunctions/supportElemOperations'
-import { searchChangedSlideIndex, getSlidesWithChangedSlide, getSlideWithNewBackground, getSlideWithChangedElems } from '../CommonFunctions/supportFunctions/supportSlideOperations'
+import { createNewId, deepFreeze } from '../CommonFunctions/SupportFunctions/CommonOperations'
+import { createPictureObj, createEmtyTextObj, createShapeObj, getChangedElem, getElemsWithChangedElem, getElemsWithNewElem, getNewElemWithNewPosition, getNewResizedElem, getNewShapeElem, getNewTextElem, searchChangedElemIndexById } from '../CommonFunctions/SupportFunctions/supportElemOperations'
+import { searchChangedSlideIndex, getSlidesWithChangedSlide, getSlideWithNewBackground, getSlideWithChangedElems } from '../CommonFunctions/SupportFunctions/supportSlideOperations'
 import { isColor, isPictureObj, isShapeObj, isTextObj } from '../CommonFunctions/typesChecking'
 import {
   Programm,

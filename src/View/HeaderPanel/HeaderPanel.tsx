@@ -42,6 +42,7 @@ function HeaderPanel(props: HeaderPanelProps) {
       <input type="text" className="title" defaultValue={props.title} 
         onKeyPress= {
           (e) => {if (e.key === "Enter") {
+              // eslint-disable-next-line eqeqeq
             e.currentTarget.value = (e.currentTarget.value == '') ? 'Default presentation' : e.currentTarget.value
             props.changePresentationTitle(e.currentTarget.value)
             e.currentTarget.blur()

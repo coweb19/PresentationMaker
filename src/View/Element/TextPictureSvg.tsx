@@ -1,5 +1,5 @@
 import React, { useEffect, useRef} from 'react'
-import { checkSelectedElem } from '../../Models/CommonFunctions/supportFunctions/supportElemOperations'
+import { checkSelectedElem } from '../../Models/CommonFunctions/SupportFunctions/supportElemOperations'
 import { PictureObj, TextObj } from '../../Models/types'
 
 interface ImgTextObjectProps {
