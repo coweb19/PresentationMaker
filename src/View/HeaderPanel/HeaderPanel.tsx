@@ -50,7 +50,7 @@ function HeaderPanel(props: HeaderPanelProps) {
         } 
       />
       <img
-          src="./logo.png"
+          src='/logo.png'
           alt='coweb-19'
       />
       <Commands menu={menu} />
